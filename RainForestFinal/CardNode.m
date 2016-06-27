@@ -119,6 +119,7 @@
 //- (void)visibleStateDidChange:(BOOL)isVisible
 //{
 //    [super visibleStateDidChange:isVisible];
+//    if (!self.name) { return; }
 //
 //    if (isVisible) {
 //        NSLog(@"%@ is visible!", self.name);
@@ -131,6 +132,7 @@
 //- (void)displayStateDidChange:(BOOL)inDisplayState
 //{
 //    [super displayStateDidChange:inDisplayState];
+//    if (!self.name) { return; }
 //
 //    if (inDisplayState) {
 //        NSLog(@"%@ has started rendering!", self.name);
@@ -143,6 +145,7 @@
 //- (void)loadStateDidChange:(BOOL)inLoadState
 //{
 //    [super loadStateDidChange:inLoadState];
+//    if (!self.name) { return; }
 //
 //    if (inLoadState) {
 //        NSLog(@"%@ is loading data!", self.name);
